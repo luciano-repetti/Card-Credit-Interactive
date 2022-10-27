@@ -9,7 +9,8 @@
 </head>
 <body>
     <main>
-        <img class="bgDesktop" src="./rss/bg-main-desktop.png" alt="">
+        <div class="bgDesktop"></div>
+        <!-- <img class="bgDesktop" src="./rss/bg-main-desktop.png" alt=""> -->
         <div class="cards">
             <div class="bgCard">
                 <div><img class="logo" src="./rss/card-logo.svg" alt=""></div>
@@ -28,14 +29,18 @@
                 <input type="text" placeholder="Menganito Perez" name="" id="name">
                 <label for="number">CARD NUMBER</label>
                 <input type="number" placeholder="1234 5678 9123 0000" name="" id="number">
-                <div class="containerBottom">
-                    <label for="date">EXP. DATE (MM/YY)
-                        <input type="number" placeholder="MM" name="" id="date">
-                        <input type="number" placeholder="YY" name="" id="date">
-                    </label>
-                    <label for="cvv">CVC
+                <div class="numbers">
+                    <div class="nf">
+                        <label for="date">EXP. DATE (MM/YY)</label>
+                        <div class="inDates">
+                            <input class="date" type="number" placeholder="YY" name="" id="date">
+                            <input class="date" type="number" placeholder="MM" name="" id="date">
+                        </div>
+                    </div>
+                    <div class="nf t">
+                        <label for="cvv">CVC</label>
                         <input type="number" placeholder="123" name="" id="cvv">
-                    </label>
+                    </div>
                 </div>
                 <input type="submit" value="Confirm">
             </form>

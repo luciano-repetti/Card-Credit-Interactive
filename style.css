@@ -16,6 +16,10 @@ main{
 .bgDesktop{
     width: 36%;
     height: 100%;
+    display: block;
+    background-image: url(./rss/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cards{
@@ -90,6 +94,7 @@ main{
 .cards .bgCard-back .cvv p{
     color: hsl(0, 0%, 100%);
     font-size: 1.1em;
+    margin-bottom: .1rem;
 }
 
 .formCard{
@@ -104,11 +109,72 @@ main{
 .formCard form{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     justify-content: space-around;
     width: 50%;
-    height: 35%;
 }
 
-.formCard form .containerBottom{
+.formCard form input{
+    height: 35px;
+    padding: .5rem;
+    border-radius: 7px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.formCard form .numbers{
+    width: 100%;
     display: flex;
+}
+
+.formCard form .nf{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.formCard form .nf.t{
+    width: 45%;
+}
+
+.formCard form .nf .inDates{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.formCard form .nf input[type="number"].date{
+    width: 45%;
+}
+
+.formCard form .nf input[type="number"]{
+    height: 35px;
+    padding: .5rem;
+    border-radius: 7px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.formCard form input[type="submit"]{
+    border: none;
+    height: 40px;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px){
+    .cards{
+        left: 13%;
+    }
 }
