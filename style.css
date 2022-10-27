@@ -177,4 +177,219 @@ input[type=number]{
     .cards{
         left: 13%;
     }
+
+    .cards .bgCard{
+        width: 330px;
+        height: 190px;
+    }
+
+    .cards .bgCard-back{
+        width: 330px;
+        height: 190px;
+    }
+
+    .cards .bgCard .credentials{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.5rem 1rem 0;
+    }
+
+    .cards .bgCard .number p{
+        font-size: 1.2em;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .cards .bgCard-back .cvv p{
+        color: hsl(0, 0%, 100%);
+        font-size: 1.05em;
+        margin-bottom: .1rem;
+    }
+
+
+    .formCard form{
+        gap: .6rem;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .cards{
+        left: 3%;
+    }
+
+    .cards .bgCard{
+        width: 310px;
+        height: 170px;
+    }
+
+    .cards .bgCard-back{
+        width: 310px;
+        height: 170px;
+    }
+
+    .cards .bgCard .credentials{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.2rem .8rem 0;
+    }
+
+    .cards .bgCard .number p{
+        font-size: 1.05em;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .cards .bgCard-back .cvv p{
+        color: hsl(0, 0%, 100%);
+        font-size: 1em;
+        margin-bottom: .1rem;
+    }
+
+
+    .formCard form{
+        gap: 1rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 765px){
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .bgDesktop{
+        display: block;
+        background-image: url(./rss/bg-main-mobile.png);
+        width: 100%;
+        height: 35%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .cards{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+    }
+
+    .cards .bgCard-back{
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+
+    .cards .bgCard{
+        position: relative;
+        left: 0;
+        top: -30px;
+        z-index: 5;
+    }
+
+    .formCard{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .formCard form{
+        gap: 1rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 525px){
+
+    .cards .bgCard-back{
+        position: relative;
+        top: 10%;
+        left: 8%;
+    }
+
+    .cards .bgCard{
+        position: relative;
+        left: -25px;
+        top: -30px;
+        z-index: 5;
+    }
+
+    .formCard{
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .formCard form{
+        gap: 1rem;
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 385px){
+
+    .bgDesktop{
+        display: block;
+        background-image: url(./rss/bg-main-mobile.png);
+        width: 100%;
+        height: 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .cards{
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .cards .bgCard-back{
+        width: 290px;
+        height: 150px;
+        position: relative;
+        top: 10%;
+        left: 8%;
+    }
+
+    .cards .bgCard{
+        width: 290px;
+        height: 150px;
+        position: relative;
+        left: -25px;
+        top: -20px;
+        z-index: 5;
+    }
+
+    .cards .bgCard .number p{
+        font-size: 1em;
+    }
+
+    .logo{
+        width: 60px;
+    }
+
+    .cards .bgCard-back .cvv p{
+        font-size: 1em;
+        margin-top: .6rem;
+    }
+
+    .cards .bgCard .bottomCard p {
+        font-size: .9em;
+    }
+
+    .formCard{
+        width: 100vw;
+        height: 60vh;
+    }
+
+    .formCard form{
+        gap: 1rem;
+        width: 68%;
+    }
 }
