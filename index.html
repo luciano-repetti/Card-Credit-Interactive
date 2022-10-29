@@ -16,35 +16,37 @@
                 <div><img class="logo" src="./rss/card-logo.svg" alt=""></div>
                 <div class="credentials">
                     <div class="number"><p>0000</p><p>0000</p><p>0000</p><p>0000</p></div>
-                    <div class="bottomCard"><p>Luciano Repetti</p><p>00/00</p></div>
+                    <div class="bottomCard"><p id="nameCard">Menganito Perez</p><div style="display: flex;"><p id="mmCard">00</p>/<p id="yyCard">00</p></div></div>
                 </div>
             </div>
             <div class="bgCard-back">
-                <div class="cvv"><p>000</p></div>
+                <div class="cvv"><p id="cvvCard">000</p></div>
             </div>
         </div>
         <div class="formCard">
             <form action="" method="post">
                 <label for="name">CARDHOLDER NAME</label>
-                <input type="text" placeholder="Menganito Perez" name="" id="name">
+                <input type="text" placeholder="Menganito Perez" name="" id="nameInput">
                 <label for="number">CARD NUMBER</label>
                 <input type="number" placeholder="1234 5678 9123 0000" name="" id="number">
                 <div class="numbers">
                     <div class="nf">
                         <label for="date">EXP. DATE (MM/YY)</label>
                         <div class="inDates">
-                            <input class="date" type="number" placeholder="YY" name="" id="date">
-                            <input class="date" type="number" placeholder="MM" name="" id="date">
+                            <input class="date" type="number" placeholder="MM" name="" id="mesInput">
+                            <input class="date" type="number" placeholder="YY" name="" id="anioInput">
                         </div>
                     </div>
                     <div class="nf t">
                         <label for="cvv">CVC</label>
-                        <input type="number" placeholder="123" name="" id="cvv">
+                        <input type="number" placeholder="123" name="" id="cvvInput">
                     </div>
                 </div>
                 <input type="submit" value="Confirm">
             </form>
         </div>
     </main>
+
+    <script src="./main.js"></script>
 </body>
 </html>
