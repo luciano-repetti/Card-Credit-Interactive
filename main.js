@@ -38,7 +38,12 @@ inputAnio.addEventListener("keyup", (event) =>{
     }
 })
 
-function subcadena(inicio, final){
-    
-    return texto.slice(inicio, final)
-}
+let numberCard = document.getElementById("numberCard")
+let inputNumber = document.getElementById("numberInput")
+
+inputNumber.addEventListener("keyup", (event) =>{
+    numberCard.innerHTML = `<p>${event.target.value.slice(0,4)}</p><p>${event.target.value.slice(4,8)}</p><p>${event.target.value.slice(8,12)}</p><p>${event.target.value.slice(12,16)}</p>`
+    if(inputNumber.value.length === 0){
+        numberCard.innerHTML = `<p>0000</p><p>0000</p><p>0000</p><p>0000</p>`
+    }
+})
