@@ -167,7 +167,7 @@ input[type=number]{
     border: 1px solid rgb(194, 194, 194);
 }
 
-.formCard form input[type="submit"]{
+.formCard form input[type="button"]{
     border: none;
     height: 40px;
     background-color: hsl(278, 68%, 11%);
