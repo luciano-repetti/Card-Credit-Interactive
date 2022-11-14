@@ -1,19 +1,19 @@
-let inputName = document.getElementById("nameInput")
-let nameCard = document.getElementById("nameCard")
+const inputName = document.getElementById("nameInput")
+const nameCard = document.getElementById("nameCard")
 
-let inputCvv = document.getElementById("cvvInput")
-let cvvCard = document.getElementById("cvvCard")
+const inputCvv = document.getElementById("cvvInput")
+const cvvCard = document.getElementById("cvvCard")
 
-let inputMonth = document.getElementById("mesInput")
-let mmCard = document.getElementById("mmCard")
+const inputMonth = document.getElementById("mesInput")
+const mmCard = document.getElementById("mmCard")
 
-let inputYear = document.getElementById("anioInput")
-let yyCard = document.getElementById("yyCard")
+const inputYear = document.getElementById("anioInput")
+const yyCard = document.getElementById("yyCard")
 
-let inputNumber = document.getElementById("numberInput")
-let numberCard = document.getElementById("numberCard")
+const inputNumber = document.getElementById("numberInput")
+const numberCard = document.getElementById("numberCard")
 
-let btnsubmit = document.getElementById("submit")
+const btnsubmit = document.getElementById("submit")
 
 function events(card, input, value){
     input.addEventListener("keyup", (event) => {
@@ -60,3 +60,14 @@ function verifCvv(cvv) {
     let validation = /^[0-9]{3,4}$/g;
     return validation.test(cvv);
 }
+
+let btnSubmit = document.getElementById("submit")
+
+btnSubmit.addEventListener("click", () =>{
+    let cardValue = inputNumber.value
+    if(!verifNumber(cardValue)){
+        console.log("error")
+    }
+    console.log(verifNumber(cardValue))
+})
+
